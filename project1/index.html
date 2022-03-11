@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandu's fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*css reset*/
+    body {
+        margin: auto;
+        padding: 15px;
+        background: url('img/gym.jpg.jpg');
+        color: white;
+        font-family: 'Balsamiq Sans', cursive;
+
+    }
+
+    .left {
+        /* border: 2px solid rgb(42, 230, 42); */
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 12px;
+        font-size: 17px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(6, 2, 12);
+
+        background-color: darkgray;
+
+    }
+
+    .left img {
+        width: 126px;
+        
+    }
+
+  
+
+    .mid {
+        border: 2px solid rgb(102, 107, 103);
+        border-radius: 10px;
+        display: block;
+        width: 45%;
+        margin: 5px auto;
+    }
+
+    .right {
+       
+        display: inline-block;
+        position: absolute;
+        right: 30px;
+        top: 12px;
+        font-family: 'Balsamiq Sans', cursive;
+
+    }
+
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+        margin: auto;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 4px 4px;
+      
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(204, 21, 21);
+    }
+
+    .btn {
+        background-color: black;
+        margin: 0px 5px;
+        color: rgb(79, 230, 137);
+        padding: 6px 6px;
+        border: 3px solid gray;
+        border-radius: 11px;
+        cursor: pointer;
+    }
+    .btn a{
+        color: aqua;
+    }
+
+    .btn:hover {
+        background: rgb(243, 143, 143);
+    }
+
+    .container {
+        border: 2px solid yellow;
+        margin: 125px 39px;
+        padding: 20px 30px;
+        border-radius: 13px;
+        width: 50%;
+        color: black;
+        border-color: rgb(10, 10, 10);
+        font-family: monospace;
+    }
+
+    .form-group input {
+        text-align: center;
+        border: 2px solid black;
+        margin: 11px auto;
+        padding: 9px;
+        width: 320px;
+        display: block;
+        font-size: 18px;
+        border-radius: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .form-group button {
+        text-align: center;
+        display: block;
+        margin: auto;
+        width: 51%;
+    }
+    #welcome{
+        font-style: oblique;
+        font-weight: bold;
+        color: rgb(14, 13, 13);
+        font-size: 2.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: absolute;
+        left: 10%;
+        top: 35%;
+        text-decoration: underline;
+        text-shadow: 2px 3px rgb(238, 133, 101);
+    }
+</style>
+
+<body>
+    <header>
+
+        <div class="left">
+
+            <img src="img/nk.png" alt="">
+            <div id="text">Nandu's Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home </a> </li>
+                <li><a href="#">About us </a> </li>
+                <li><a href="#"> Fitness Calculator </a> </li>
+                <li><a href="#"> Contact us </a> </li>
+            </ul>
+
+
+        </div>
+        <div class="right">
+            <button class="btn"><a href="tel:9504543802"> Call us now</a></button>
+            <button class="btn"><a href="mailto:999nandkishor@gmail.com"> Email us </a></button>
+
+        </div>
+    </header>
+    <div class="container" id="remove">
+        <h1>Join the best GYM of begusarai now</h1>
+        <!-- <form action="#"> -->
+            <div class="form-group">
+                <input type="text" name="" id="namenk" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your address">
+            </div>
+
+            <div class="form-group" id="nkk">
+                <input type="text" name="" id="" placeholder="Enter your Mobile no.">
+                <button class="btn" id="submit">Submit now</button>
+        <!-- </form> -->
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="welcome"> </div>
+</body>
+<script>document.getElementById('remove');
+//  const name=document.getElementById('namenk').value;
+ 
+
+    document.getElementById('submit').addEventListener('click',nk);
+    function nk(){
+        alert('Thank You to Join');
+        console.log(name);
+        const wlcm=document.getElementById('welcome').innerHTML= "Welcome Mr " +  document.getElementById('namenk').value +  " To Nandu's Fitness";
+        
+        remove.remove();
+        
+    }
+    
+  
+</script>
+</html>
